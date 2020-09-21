@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookList || made by js</title>
+    <!-- font awesome link -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+
+    <!-- bootstrap style link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container mt-4">
+        <h1 class="display-4 text-center">
+             <i class="fas fa-book-open  text-primary"></i> My<span class="text-primary">Book</span>List </h1>
+            
+           <form id="book-form">
+               <div class="form-group">
+                   <label for="title">Title</label>
+                   <input type="text" class="form-control" id="title">
+                   <div class="form-group">
+                    <label for="author">Author</label>
+                    <input type="text" class="form-control" id="author">
+                    <div class="form-group">
+                        <label for="isbn">ISBN#</label>
+                        <input type="text" class="form-control" id="isbn">
+               </div>
+               <input type="submit" value="Add Book" class="btn btn-primary btn-block "id="sub_btn">
+
+           </form>
+           <!-- <button class="btn btn-primary form-control " id="sub_btn">Submit</button> -->
+           <table class="table table-bordered table-striped  text-center mt-4" id="table-data">
+               <thead>
+                   <tr>
+                       <th>Title</th>
+                       <th>Author</th>
+                       <th>ISBN#</th>
+                       <th></th>
+                   </tr>
+               </thead>
+               <!-- <tr>
+                   <td>ssd</td>
+                   <td>ssd</td>
+                   <td>ssd</td>
+               </tr>
+               <tr>
+                <td>ssd</td>
+                <td>ssd</td>
+                <td>ssd</td>
+            </tr> -->
+               <tbody id="book-list"></tbody> 
+           </table>
+    </div>
+    <script src="app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>   
+</body>
+</html>
